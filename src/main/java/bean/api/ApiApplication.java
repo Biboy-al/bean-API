@@ -22,9 +22,11 @@ public class ApiApplication {
   public CommandLineRunner demo(UserRepository repo) {
 
     return args -> {
-      repo.save(new User("Johnss", "Does"));
+      repo.save(new User("Johnssss", "Doesss"));
 
       repo.findAll().forEach(user -> logger.info("User: {}", user.getUsername()));
+
+      repo.deleteAll();
     };
   }
 }
