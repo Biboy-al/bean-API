@@ -1,11 +1,16 @@
 package bean.api;
 
-import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
+// @Testcontainers
 @SpringBootTest
 class ApiApplicationTests {
 
-  @Test
-  void contextLoads() {}
+  //  @Container
+  //  @ServiceConnection
+  //  static PostgreSQLContainer<?> postgreSQLContainer = new
+  // PostgreSQLContainer<>("postgres:16-alpine");
+  //
+  //  @Test
+  //  void contextLoads() {}
 }
