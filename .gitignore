@@ -1,9 +1,12 @@
+<<<<<<< HEAD
 .build/
 
 .gradle/
 
 .idea/
 
+=======
+>>>>>>> 95cb1ff2ff3e5caadced124e6d7780ff0850cfd6
 build/
 
 # Compiled class file
@@ -22,4 +25,8 @@ build/
 *.ear
 *.zip
 *.tar.gz
+<<<<<<< HEAD
 *.rar
+=======
+*.rar
+>>>>>>> 95cb1ff2ff3e5caadced124e6d7780ff0850cfd6
