@@ -7,7 +7,7 @@ public class Review implements IEntity {
 
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
-  private Long id;
+  private long id;
 
   private int rating;
 
@@ -31,7 +31,7 @@ public class Review implements IEntity {
   }
 
   @Override
-  public Long getId() {
+  public long getId() {
     return this.id;
   }
 

@@ -29,7 +29,7 @@ public class User implements IEntity {
   }
 
   @Override
-  public Long getId() {
+  public long getId() {
     return this.id;
   }
 

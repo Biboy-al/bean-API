@@ -9,7 +9,7 @@ public class Bean implements IEntity {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private Long id;
+  private long id;
 
   private String name;
 
@@ -26,7 +26,7 @@ public class Bean implements IEntity {
   }
 
   @Override
-  public Long getId() {
+  public long getId() {
     return this.id;
   }
 
