@@ -5,8 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
-@SpringBootTest
-public class TestAddBeanService {
+public class AddBeanServiceTest {
 
   @MockitoBean private BeanRepository beanRepository;
 

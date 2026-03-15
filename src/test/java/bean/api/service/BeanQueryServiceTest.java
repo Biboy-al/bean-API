@@ -13,7 +13,7 @@ import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
-public class TestBeanQueryService {
+public class BeanQueryServiceTest {
 
   @Mock BeanRepository beanRepository;
 
