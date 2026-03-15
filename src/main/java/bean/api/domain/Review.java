@@ -23,11 +23,11 @@ public class Review implements IEntity {
 
   protected Review() {}
 
-  public Review(int rating, String comment, User user, Bean bean) {
+  public Review(int rating, String comment) {
     this.rating = rating;
     this.comment = comment;
-    this.user = user;
-    this.bean = bean;
+    //    this.user = user;
+    //    this.bean = bean;
   }
 
   @Override
