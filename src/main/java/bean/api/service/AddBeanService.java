@@ -1,3 +1,8 @@
 package bean.api.service;
 
-public interface AddBeanService {}
+import bean.api.dto.BeanDTO;
+import bean.api.dto.CreateBeanRequest;
+
+public interface AddBeanService {
+    public BeanDTO createBean(CreateBeanRequest createBeanRequest);
+}

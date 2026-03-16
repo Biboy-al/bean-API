@@ -1,17 +1,41 @@
 package bean.api.service;
 
+import bean.api.domain.Bean;
+import bean.api.dto.BeanDTO;
+import bean.api.dto.CreateBeanRequest;
 import bean.api.repos.BeanRepository;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.when;
+
+@ExtendWith(MockitoExtension.class)
 public class AddBeanServiceTest {
 
-  @MockitoBean private BeanRepository beanRepository;
+  @Mock
+  private BeanRepository beanRepository;
 
   @Test
   public void testAddBean() {
+    AddBeanServiceImpl service = new AddBeanServiceImpl(beanRepository);
 
-    //        AddBeanServiceImpl service = new AddBeanServiceImpl();
+    Bean mockBean = new Bean("Supreme", "Supreme is good");
+
+    mockBean.setId(1L);
+
+    when(beanRepository.save(any(Bean.class)))
+              .thenReturn(mockBean);
+
+    BeanDTO createdBean = service.createBean(new CreateBeanRequest("David", "David.jams@gmail.com"));
+
+    assertNotNull(createdBean);
+    assertEquals(1L, createdBean.id());
+
   }
 }

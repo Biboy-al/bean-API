@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/bean")
 public class BeanController {
 
-  private BeanQueryService beanQueryService;
+  private final BeanQueryService beanQueryService;
 
   public BeanController(BeanQueryService beanQueryService) {
     this.beanQueryService = beanQueryService;
