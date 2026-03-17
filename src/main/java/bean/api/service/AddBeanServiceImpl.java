@@ -4,9 +4,11 @@ import bean.api.domain.Bean;
 import bean.api.dto.BeanDTO;
 import bean.api.dto.CreateBeanRequest;
 import bean.api.repos.BeanRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class AddBeanServiceImpl implements AddBeanService {
 
     private final BeanRepository beanRepository;

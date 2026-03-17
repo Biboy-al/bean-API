@@ -1,6 +1,8 @@
 package bean.api.controller;
 
 import bean.api.dto.BeanDTO;
+import bean.api.dto.CreateBeanRequest;
+import bean.api.service.AddBeanService;
 import bean.api.service.BeanQueryService;
 import org.springframework.web.bind.annotation.*;
 
@@ -9,16 +11,18 @@ import org.springframework.web.bind.annotation.*;
 public class BeanController {
 
   private final BeanQueryService beanQueryService;
+  private final AddBeanService addBeanService;
 
-  public BeanController(BeanQueryService beanQueryService) {
+  public BeanController(BeanQueryService beanQueryService, AddBeanService addBeanService) {
     this.beanQueryService = beanQueryService;
+    this.addBeanService = addBeanService;
   }
 
 
   @PostMapping
-  public BeanDTO postBean() {
+  public BeanDTO postBean(@RequestBody CreateBeanRequest createBeanRequest) {
 
-    return null;
+    return this.addBeanService.createBean(createBeanRequest);
   }
 
   @GetMapping("/{id}")
