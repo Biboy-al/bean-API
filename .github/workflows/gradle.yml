@@ -72,7 +72,7 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
       - name: "login to cloudsmith"
         run: |
-          echo ${{ secrets.CLOUDSMITH_API_KEY }} | docker login docker.cloudsmith \
+          echo ${{ secrets.CLOUDSMITH_API_KEY }} | docker login docker.cloudsmith.io \
           -u alvien-salvador \
           --password-stdin
 
