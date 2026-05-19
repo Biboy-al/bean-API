@@ -9,7 +9,6 @@ on:
       - main
 
 jobs:
-
   build:
     runs-on: ubuntu-latest
     permissions:
@@ -61,3 +60,6 @@ jobs:
           distribution: 'temurin'
       - uses: gradle/actions/setup-gradle@v4
       - run: ./gradlew test
+
+  Deploy:
+    runs-on: ubuntu-latest
