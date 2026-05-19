@@ -30,6 +30,10 @@ public class Bean implements IEntity {
     return this.id;
   }
 
+  public void setId(long id) {
+    this.id = id;
+  }
+
   public String getDescription() {
     return this.description;
   }

@@ -1,6 +1,7 @@
 package bean.api.domain;
 
 import jakarta.persistence.*;
+import org.apache.logging.log4j.internal.annotation.SuppressFBWarnings;
 
 @Entity
 public class Review implements IEntity {
@@ -47,6 +48,7 @@ public class Review implements IEntity {
     return this.user;
   }
 
+  @SuppressFBWarnings("EI_EXPOSE_REP")
   public Bean getBean() {
     return this.bean;
   }
