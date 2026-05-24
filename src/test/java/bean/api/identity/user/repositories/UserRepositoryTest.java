@@ -1,4 +1,4 @@
-package bean.api.repo;
+package bean.api.beanCatalog.bean.repositories;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
