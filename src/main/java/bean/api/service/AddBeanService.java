@@ -4,5 +4,5 @@ import bean.api.dto.BeanDTO;
 import bean.api.dto.CreateBeanRequest;
 
 public interface AddBeanService {
-    public BeanDTO createBean(CreateBeanRequest createBeanRequest);
+  public BeanDTO createBean(CreateBeanRequest createBeanRequest);
 }
