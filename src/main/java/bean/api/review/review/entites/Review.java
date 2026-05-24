@@ -42,4 +42,12 @@ public class Review implements IEntity {
   public String getComment() {
     return this.comment;
   }
+
+  public long getUserId() {
+    return this.userId;
+  }
+
+  public long getBeanId() {
+    return this.getBeanId();
+  }
 }
