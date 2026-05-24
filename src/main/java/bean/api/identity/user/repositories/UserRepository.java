@@ -1,6 +1,6 @@
-package bean.api.repos;
+package bean.api.identity.user.repositories;
 
-import bean.api.domain.User;
+import bean.api.identity.user.entites.User;
 import java.util.Optional;
 import org.springframework.data.repository.CrudRepository;
 

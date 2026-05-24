@@ -2,8 +2,8 @@ package bean.api.repo;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import bean.api.domain.Review;
-import bean.api.repos.ReviewRepository;
+import bean.api.review.review.entites.Review;
+import bean.api.review.review.repositories.ReviewRepository;
 import java.util.Optional;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,7 +27,7 @@ public class ReviewRepositoryTest {
 
   @Test
   public void testSaveAndFindById() {
-    Review review = new Review(10, "Coffee Beans");
+    Review review = new Review(10, "Coffee Beans", 1L, 2L);
 
     Review savedReview = reviewRepository.save(review);
 

@@ -1,8 +1,9 @@
 package bean.api.service;
 
-import bean.api.domain.Bean;
-import bean.api.dto.BeanDTO;
-import bean.api.repos.BeanRepository;
+import bean.api.beanCatalog.bean.dto.BeanDTO;
+import bean.api.beanCatalog.bean.entites.Bean;
+import bean.api.beanCatalog.bean.repositories.BeanRepository;
+import bean.api.beanCatalog.bean.services.BeanQueryServiceImpl;
 import java.util.List;
 import java.util.Optional;
 import org.junit.jupiter.api.Assertions;

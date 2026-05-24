@@ -2,8 +2,8 @@ package bean.api.repo;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import bean.api.domain.User;
-import bean.api.repos.UserRepository;
+import bean.api.identity.user.entites.User;
+import bean.api.identity.user.repositories.UserRepository;
 import java.util.Optional;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

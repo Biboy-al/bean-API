@@ -3,10 +3,11 @@ package bean.api.controller;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 
-import bean.api.dto.BeanDTO;
-import bean.api.dto.CreateBeanRequest;
-import bean.api.service.AddBeanServiceImpl;
-import bean.api.service.BeanQueryServiceImpl;
+import bean.api.beanCatalog.bean.controller.BeanController;
+import bean.api.beanCatalog.bean.dto.BeanDTO;
+import bean.api.beanCatalog.bean.dto.CreateBeanRequest;
+import bean.api.beanCatalog.bean.services.AddBeanServiceImpl;
+import bean.api.beanCatalog.bean.services.BeanQueryServiceImpl;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

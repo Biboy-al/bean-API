@@ -1,6 +1,6 @@
-package bean.api.service;
+package bean.api.beanCatalog.bean.services;
 
-import bean.api.dto.BeanDTO;
+import bean.api.beanCatalog.bean.dto.BeanDTO;
 import java.util.List;
 
 public interface BeanQueryService {

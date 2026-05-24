@@ -1,8 +1,7 @@
-package bean.api.domain;
+package bean.api.beanCatalog.bean.entites;
 
+import bean.api.shared.entites.IEntity;
 import jakarta.persistence.*;
-import java.util.Collections;
-import java.util.List;
 
 @Entity
 public class Bean implements IEntity {
@@ -11,14 +10,11 @@ public class Bean implements IEntity {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private long id;
 
-  private String name;
+  private final String name;
 
-  private String description;
+  private final String description;
 
-  @OneToMany(mappedBy = "bean")
-  private List<Review> reviews;
-
-  protected Bean() {}
+  //   protected Bean() {}
 
   public Bean(String name, String description) {
     this.name = name;
@@ -40,9 +36,5 @@ public class Bean implements IEntity {
 
   public String getName() {
     return this.name;
-  }
-
-  public List<Review> getReviews() {
-    return Collections.unmodifiableList(this.reviews);
   }
 }

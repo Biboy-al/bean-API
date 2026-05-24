@@ -1,9 +1,9 @@
-package bean.api.service;
+package bean.api.beanCatalog.bean.services;
 
-import bean.api.domain.Bean;
-import bean.api.dto.BeanDTO;
-import bean.api.dto.CreateBeanRequest;
-import bean.api.repos.BeanRepository;
+import bean.api.beanCatalog.bean.dto.BeanDTO;
+import bean.api.beanCatalog.bean.dto.CreateBeanRequest;
+import bean.api.beanCatalog.bean.entites.Bean;
+import bean.api.beanCatalog.bean.repositories.BeanRepository;
 import java.util.List;
 import org.springframework.stereotype.Service;
 

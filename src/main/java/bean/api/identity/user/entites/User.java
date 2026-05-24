@@ -1,8 +1,7 @@
-package bean.api.domain;
+package bean.api.identity.user.entites;
 
+import bean.api.shared.entites.IEntity;
 import jakarta.persistence.*;
-import java.util.Collections;
-import java.util.List;
 
 @Entity
 @Table(name = "app_users")
@@ -17,9 +16,6 @@ public class User implements IEntity {
 
   @Column(nullable = false, unique = true)
   private String email;
-
-  @OneToMany(mappedBy = "user")
-  private List<Review> reviews;
 
   protected User() {}
 
@@ -39,9 +35,5 @@ public class User implements IEntity {
 
   public String getEmail() {
     return this.email;
-  }
-
-  public List<Review> getReviews() {
-    return Collections.unmodifiableList(this.reviews);
   }
 }

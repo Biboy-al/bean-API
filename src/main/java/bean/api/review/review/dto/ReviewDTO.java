@@ -1,3 +1,3 @@
-package bean.api.dto;
+package bean.api.review.review.dto;
 
 public record ReviewDTO(long id, int rating, String comment, long userId, long reviewId) {}

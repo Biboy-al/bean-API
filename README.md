@@ -1,5 +1,39 @@
 # bean-API
 
+## Architecture
+
+To model entites in this application Domain Driven Design (DDD) will be used.
+
+### Sub Domains
+
+There has been 5 sub domains identified, split between, core, supporting, and generic domains.
+
+Core Domains:
+- Bean
+- Review
+- User
+
+Supporting Domain:
+- Analytics (TBA)
+
+Generic Domain:
+- Auth (TBA)
+
+### Bounded Context
+
+Further more bounded contexts have been identified:
+- Bean catalog context
+ - Bean aggregate
+ - Roaster aggregate
+
+- Review context
+ - Review Aggregate
+
+Identity Context
+ - User aggregate 
+ - Auth aggregate 
+
+
 ## Dev-tools
 
 To ease development a number of dev tools have been imported and integrated in the build process and CI/CD:

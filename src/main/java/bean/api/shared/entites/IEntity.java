@@ -1,4 +1,4 @@
-package bean.api.domain;
+package bean.api.shared.entites;
 
 public interface IEntity {
 

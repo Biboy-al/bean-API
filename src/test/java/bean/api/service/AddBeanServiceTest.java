@@ -5,10 +5,11 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 
-import bean.api.domain.Bean;
-import bean.api.dto.BeanDTO;
-import bean.api.dto.CreateBeanRequest;
-import bean.api.repos.BeanRepository;
+import bean.api.beanCatalog.bean.dto.BeanDTO;
+import bean.api.beanCatalog.bean.dto.CreateBeanRequest;
+import bean.api.beanCatalog.bean.entites.Bean;
+import bean.api.beanCatalog.bean.repositories.BeanRepository;
+import bean.api.beanCatalog.bean.services.AddBeanServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;

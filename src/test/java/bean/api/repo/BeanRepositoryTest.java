@@ -2,8 +2,8 @@ package bean.api.repo;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import bean.api.domain.Bean;
-import bean.api.repos.BeanRepository;
+import bean.api.beanCatalog.bean.entites.Bean;
+import bean.api.beanCatalog.bean.repositories.BeanRepository;
 import java.util.Optional;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

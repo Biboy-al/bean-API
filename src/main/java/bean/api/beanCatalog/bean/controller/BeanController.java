@@ -1,13 +1,17 @@
-package bean.api.controller;
+package bean.api.beanCatalog.bean.controller;
 
-import bean.api.dto.BeanDTO;
-import bean.api.dto.CreateBeanRequest;
-import bean.api.service.AddBeanService;
-import bean.api.service.BeanQueryService;
+import bean.api.beanCatalog.bean.dto.BeanDTO;
+import bean.api.beanCatalog.bean.dto.CreateBeanRequest;
+import bean.api.beanCatalog.bean.services.AddBeanService;
+import bean.api.beanCatalog.bean.services.BeanQueryService;
 import java.util.List;
-import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/bean")

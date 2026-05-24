@@ -1,6 +1,6 @@
-package bean.api.repos;
+package bean.api.beanCatalog.bean.repositories;
 
-import bean.api.domain.Bean;
+import bean.api.beanCatalog.bean.entites.Bean;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.data.repository.CrudRepository;
